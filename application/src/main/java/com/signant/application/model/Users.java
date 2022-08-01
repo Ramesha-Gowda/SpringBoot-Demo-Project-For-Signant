@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.NonNull;
+
 @Entity
 @Table(name="users")
 public class Users {
@@ -12,6 +14,7 @@ public class Users {
 	@Id
 	private Long id;
 	private String name;
+	@NonNull
 	private String email;
 	private String password;
 	
