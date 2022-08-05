@@ -23,6 +23,7 @@ import com.signant.application.repository.UserRepository;
 public class UserController {
 
 	private final Logger log = LoggerFactory.getLogger(UserController.class);
+	
 	private UserRepository userRepository;
 	
 	public UserController(UserRepository userRepository) {
@@ -30,7 +31,7 @@ public class UserController {
 	}
 	
 	@GetMapping("/users")
-	Collection<Users> groups() {
+	Collection<Users> getAllUsers() {
 		return userRepository.findAll();
 	};
 	

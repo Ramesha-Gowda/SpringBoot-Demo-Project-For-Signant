@@ -23,7 +23,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.signant.application.model.Items;
+import com.signant.application.model.Users;
 import com.signant.application.repository.ItemRepository;
+import com.signant.application.repository.UserRepository;
 
 @RestController
 @RequestMapping("/api")
